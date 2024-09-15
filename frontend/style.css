@@ -1,0 +1,336 @@
+:root{/*Variaveis de cor*/
+    --cor-texto: #004aad;
+    --cor-principal: #1a9047;
+    --cor-titulo:#2bc866;
+}
+html{/*Scroll leve*/
+    scroll-behavior: smooth;
+}
+*{ /*Reset basico de css*/
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 80px;/*Altura*/
+    width: 100%;/*Largura*/
+    display: flex;/*Alinhamento*//*Orientação do display*/
+    align-items: center;/*Alinhamento centralizado*/
+    justify-content: space-around;/*Alinhamento horizontal*/
+    position: fixed;/*Fixando cabeçalho*/
+    border-bottom: rgba(128, 128, 128, 0.5) solid 2px;/*borda inferior*/
+    background-color: white;/*Cor de fundo*/
+}
+.Logo{/*Logo*/
+    display: flex;/*Alinhamento*/
+    align-items: center;/*Alinhamento*/
+    gap: 30px;/*distancia de itens*/
+    font-size: 2em;/*tamanho da fonte*/
+    color: var(--cor-texto);/*cor do texto*/
+    font-weight: bold;/*Negrito*/
+}
+.Logo a{/*link do logo*/
+    text-decoration: none;/*Retirando pre definição de link*/
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;/*Alinhando texto*/
+}
+.Logo a:active{/*Ao ativar link*/
+    color: var(--cor-texto);
+}
+.icon{
+    width: 50px;
+}
+
+nav ul {
+    display: flex;/*Alinhamento*/
+    list-style: none;/*Retirando estilo predefinidos da lista*/
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 1em;
+    font-weight: bold;
+}
+nav ul li a:hover{/*quando o cursor estiver sobre*/
+    color: var(--cor-principal);
+}
+.botoes {
+    display: flex;/*Alinhamento*/
+    gap: 50px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    border: 3px solid var(--cor-principal);
+    border-radius: 50px;
+    cursor: pointer;
+
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+.botoes .entrar {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.botoes .cadastrar {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.botoes button:hover {
+    background-color: white;
+    color: var(--cor-principal);
+}
+
+/*___________________________________________________________*/
+
+#Rastreio{/*definições da pagina Home*/
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 115vh;
+}
+h1{/*formatação de titulo*/
+    color: var(--cor-titulo);
+    font-size: 4em;
+}
+.pesquisa{
+    display: flex;/*Alinhamento*/
+    gap: 10px;
+}
+
+.pesquisa input{/*Formatação de input*/
+    border-radius: 5px;
+    padding: 10px;
+    width: 35vw;
+    font-size: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.submit{/*Formatação do botão de submit*/
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    background-color: rgb(128, 128, 128);
+    color: white;
+    font-weight: bold;
+}
+.ICONE_RASTREIO{
+    height: 20px;
+}
+.boxes{
+    width: 70vw;
+}
+
+/*___________________________________________________________*/
+
+#Sobre{/*Definições da pagina Sobre*/
+    padding-top: 10vh;
+    height: 80vh;
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#Sobre h2, #Sobre h3, #Sobre h4{ /*Coloração dos titulos*/
+    color: var(--cor-titulo);
+}
+#Sobre_facilitar{/*definições da parte superir do sobre*/
+    display: flex;/*Alinhamento*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+#Sobre_facilitar h2{
+    font-size: 2.5em;
+}
+
+#Sobre_icones{/*definições da separação dos icones do Sobre*/
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}
+
+#Sobre_icones div{
+    width: 20%;
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#Sobre h4{
+    font-size: 1.5em;
+}
+
+#Sobre_cadastro{
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+#Sobre_cadastro h3{
+    font-size: 2em;
+}
+#Sobre_cadastro button{
+    height: 30px;
+    background-color: var(--cor-titulo);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+#Sobre_cadastro button:hover{
+    opacity: .8;
+}
+
+/*___________________________________________________________*/
+
+#Parceiros{/*Definições da pagina Parceiros*/
+    padding-top: 5vh;
+    height: 100vh;
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    justify-content: center;
+}
+#Parceiros_infos{
+    height: 80%;
+    width: 100%;
+    background-color: var(--cor-titulo);
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#Parceiros_texto{
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+    width: 30%;
+    color: white;
+}
+#Parceiros_texto h2{
+    font-size: 2.5em;
+}
+#Parceiros_texto p{
+    font-size: 1em;
+}
+
+#Parceiros_icons{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#Parceiros_infos img{
+    width: 25%;
+}
+
+/*___________________________________________________________*/
+
+#Ajuda{/*Definições da pagina Ajuda*/
+    padding-top: 10vh;
+    height: 90vh;
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Ajuda_Comeco{
+    height: 30%;
+    width: 100%;
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#Ajuda_Comeco img{
+    width: 500px;
+}
+#Ajuda_TXT{
+    height: 100%;
+    width: 360px;
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+#Ajuda_TXT h2{
+    font-size: 2.5em;
+    color: var(--cor-titulo);
+}
+#Ajuda_TXT p{
+    font-size: 1.3em;
+}
+
+#Ajuda_Cards{
+    min-height: 50%;
+    display: flex;/*Alinhamento*/
+    align-items: center;
+    gap: 20px;
+}
+
+.cards{/*Formatação dos cards*/
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    width: 15vw;
+    border: 1px var(--cor-titulo) solid;
+    gap: 20px;
+    padding: 30px 20px 20px 20px;
+    border-radius: 10px;
+    min-height: 320px;
+}
+.cards img{
+    width: 30px;
+}
+
+
+.cards h3{
+    color: var(--cor-titulo);
+    font-size: 1.2em;
+}
+.cards ul{
+    display: flex;/*Alinhamento*/
+    flex-direction: column;
+    gap: 10px;
+}
+.cards li{
+    list-style-type: disc;
+}
+
+#Ajuda_Cards img{
+    height: 30px;
+}
+#Esquerda{
+    transform: rotate(180deg);
+}
